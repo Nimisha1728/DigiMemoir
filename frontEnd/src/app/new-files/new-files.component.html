@@ -1,0 +1,45 @@
+<!-- <h1>Questionairs</h1> -->
+
+
+
+<form (ngSubmit)="AddFile()">
+ <div class="new form-group">
+   <label for="title">Title</label>
+   <input type="text" name="f_name" [(ngModel)]="fileItem.fileName" placeholder="title" autocomplete="off">
+   <!-- <ul class="help-block">
+     <li *ngIf="form.controls.title.dirty && form.controls.title.errors?.required">This field is required</li>
+   </ul> -->
+
+ </div> 
+
+<div id="imgChoose">
+   ImageUrl: <input type="text" name="f_img" [(ngModel)]="fileItem.fileImage">
+    
+</div>
+
+<div id="features">These features are not working now so plz enter url now<br>
+<label for="picture-input"><div data-toggle="tooltip" data-placement="top" title="add image to your note" class="add--img fa fa-picture-o"></div></label><input  id="picture-input" type="file"  />
+<label for="audio-input"><div data-toggle="tooltip" data-placement="top" title="add an audio to your note" class="add--audio fa fa-volume-up"></div></label><input  id="audio-input" type="file" />
+<label for="video-input"><div data-toggle="tooltip" data-placement="top" title="add a video to your note" class="add--video fa fa-film"></div></label><input  id="video-input" type="file" />
+
+</div>
+
+ <!-- Body Input -->
+ 
+ <div class="form-group">
+    <!-- <label for="body">Body</label> -->
+   
+    <textarea name="f_desc" [(ngModel)]="fileItem.fileDescription"  rows='8' cols="80" placeholder="*Body" class="form-control"></textarea>
+   
+   
+</div>
+
+ <!-- Go Back Button -->
+ <button  type="button" id="gobackbtn" name="button" (click)="goBack()" class="btn btn-info">Go Back</button>
+<!-- Submit Button -->
+<button type="submit"  name="button" class="btn btn-success">Submit</button>
+
+</form>
+
+<!-- Ends New Blog Form -->
+

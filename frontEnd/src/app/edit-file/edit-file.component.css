@@ -1,0 +1,26 @@
+.new{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+textarea{
+    margin-top: 40px;
+    margin-left:100px;
+    width:70%;
+    height: 500px;
+}
+.btn-success{
+    margin-left: 50px;
+    width:80px;
+    height: 40px;
+}
+#imgChoose{
+    margin-left: 100px;
+    padding-top:50px; 
+}
+#gobackbtn{
+    margin-left:100px;
+}
+h3{
+    margin-top:150px;
+    margin-left:60px;
+}

@@ -1,0 +1,22 @@
+h1{
+    margin-top:100px;
+}
+.panel{
+    margin-left: 150px;
+    margin-top:90px;
+    width:70%;
+    border:1px solid grey;
+    background-color: lightgoldenrodyellow;
+}
+.panel button{
+    margin:8px;
+    margin-left:25px;
+}
+#newbtn{
+    margin-left:80px;
+    margin-top:150px;
+}
+
+.panel-heading,.panel-image,.panel-body,.panel-footer{
+    padding-left:30px;
+}

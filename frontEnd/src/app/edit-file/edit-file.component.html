@@ -1,0 +1,37 @@
+<h3>Edit Space</h3>
+
+
+
+<form (ngSubmit)="updateFile()">
+ <div class="new form-group">
+   <label for="title">Title</label>
+   <input type="text" name="f_name" [(ngModel)]="fileItem.fileName" placeholder="title" autocomplete="off">
+   <!-- <ul class="help-block">
+     <li *ngIf="form.controls.title.dirty && form.controls.title.errors?.required">This field is required</li>
+   </ul> -->
+
+ </div> 
+
+<div id="imgChoose">
+    <input type="text" name="f_img" [(ngModel)]="fileItem.fileImage">
+    
+</div>
+
+ <!-- Body Input -->
+ <div class="form-group">
+    <!-- <label for="body">Body</label> -->
+
+    <textarea name="f_desc" [(ngModel)]="fileItem.fileDescription"  rows='8' placeholder="*Body" class="form-control"></textarea>
+   
+</div>
+
+ <!-- Go Back Button -->
+ <button  type="button" id="gobackbtn" name="button" (click)="goBack()" class="btn btn-info">Go Back</button>
+<!-- Submit Button -->
+<button type="submit"  name="button" class="btn btn-success">Update</button>
+
+</form>
+
+<!-- Ends New Blog Form -->
+
+

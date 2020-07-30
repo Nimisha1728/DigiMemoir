@@ -1,0 +1,55 @@
+<!-- new post button -->
+
+<a routerLink="/add"><button id="newbtn" type="button" name="button" class="btn btn-primary" >New file</button></a>
+
+<!-- Panel starts -->
+<div>
+
+    <!-- Panel Outer Layer -->
+    <div class="panel panel-default" *ngFor="let file of folder">
+  
+        <!-- Panel Title -->
+        <div class="panel-heading ">
+            <h3 class="panel-title">{{ file.fileName }}</h3>
+        </div>
+        
+       
+    <!-- Panel Body -->
+
+    <div class="panel-image">
+        <img [src]='file.fileImage'
+        [style.width.px]='imageWidth'
+        [style.margin.px]='imageMargin'>
+    </div>
+    <div class="panel-body">
+      {{ file.fileDescription }}
+    </div>
+
+    <!-- Panel Footer -->
+    <div class="panel-footer">
+        <strong>Date:</strong>
+    </div>
+
+    <!-- Edit Button -->
+    <a routerLink="/edit/{{file._id}}"><button type="button" name="button" class="btn btn-sm btn-info">Edit</button></a>
+    <!-- Delete Button -->
+    <a routerLink="/folder"><button type="button" name="button" class="btn btn-sm btn-danger" (click) = 'deleteFile(file._id)'>Delete</button></a>
+
+
+
+<!-- Panel Footer Ends -->
+
+<!-- Post Comment Box -->
+<!-- <ul class="list-group">
+    <li class="list-group-item">
+        <button type="button" name="button" class="btn btn-sm btn-danger" (click)="draftComment()">Post Comment</button>
+
+    </li>
+</ul> -->
+<!-- Post Comments Ends -->
+
+</div>
+<!-- Panel Outer layer Ends -->
+</div>
+<!-- Panel Ends -->
+<br>

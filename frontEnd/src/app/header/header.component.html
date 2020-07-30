@@ -1,0 +1,26 @@
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center">
+        <div class="logo mr-auto">
+          <h1 class="text-light"><a routerLink="index.html"><span>DigiMemoir</span></a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li class="active"><a routerLink="/">Home</a></li>
+            <li><a routerLink="/about">MyCreation</a></li>
+           
+            <!-- <li><a *ngIf="!_authService.loggedIn()" routerLink="/portfolio">Portfolio</a></li> -->
+            <li><a *ngIf="!_authService.loggedIn()" routerLink="/login" routerLinkActive="active">Login</a></li>
+            <li><a *ngIf="!_authService.loggedIn()" routerLink="/register" routerLinkActive="active">Register</a></li>
+           
+
+            <li><a style="cursor: pointer" *ngIf="_authService.loggedIn()" (click)="_authService.logoutUser()">Logout</a></li>
+          </ul>
+        </nav><!-- .nav-menu -->
+      </div><!-- End Header Container -->
+    </div>
+  </header><!-- End Header -->

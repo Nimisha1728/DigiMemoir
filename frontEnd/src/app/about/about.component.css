@@ -1,0 +1,20 @@
+.main-row{
+    margin-top:100px;
+    margin-left: 100px;
+    height: 500px;
+}
+textarea{
+    width:800px;
+    height: 800px;
+    margin-left:50%;
+}
+
+#para{
+    background-color: #009970;
+    color: white;
+    padding:20px;
+    margin-left:100px;
+    width:50%;
+    margin-top:100px;
+    height: 150px;
+}
